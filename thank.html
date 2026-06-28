@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>いつもありがとう</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 温かみのあるフォント（さわらび明朝）を読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<style>
+/* 全体のリセットと背景設定 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4ece1; /* グランピング・自然をイメージした温かみのあるベージュ */
+    font-family: 'Sawarabi Mincho', "Yu Mincho", "MS PMincho", serif;
+    color: #4a3b32; /* 目に優しい深みのあるブラウン */
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 手紙を包むコンテナ */
+.letter-container {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* 内側の飾り枠 */
+.letter-border {
+    border: 1px solid #d1c2b1;
+    padding: 30px 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* 装飾アイコン */
+.header-deco, .footer-deco {
+    font-size: 1.2rem;
+    color: #8c9a86; /* 森や自然をイメージしたアースグリーン */
+    margin-bottom: 20px;
+    letter-spacing: 0.3em;
+}
+.footer-deco {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+/* 手紙の本文エリア */
+.letter-content {
+    text-align: left; /* 基本は読みやすいように左寄せ */
+    font-size: 1.05rem;
+    word-break: break-all;
+}
+
+/* 段落ごとの余白 */
+.letter-content p {
+    margin-bottom: 1.8rem;
+    text-indent: 1em; /* 行頭を1文字空ける */
+}
+
+/* 挨拶と結び、強調の調整 */
+.letter-content p.greeting {
+    text-indent: 0;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-bottom: 1px dashed #e2dacb;
+    padding-bottom: 15px;
+    margin-bottom: 2rem;
+    color: #3d2f26;
+}
+
+.letter-content p.strong-text {
+    text-indent: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #aa6f47; /* 決意を込めた温かみのあるテラコッタ色 */
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.letter-content p.closing {
+    text-indent: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 2;
+    background-color: #fbf9f6;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 3px solid #8c9a86;
+}
+
+/* レスポンシブ対応（スマホで見やすく） */
+@media (max-width: 480px) {
+    .letter-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    .letter-border {
+        padding: 20px 15px;
+    }
+    .letter-content {
+        font-size: 0.95rem;
+    }
+    .letter-content p.greeting {
+        font-size: 1.05rem;
+    }
+}
+
+
+
+</style>
+</head>
+<body>
+
+    <div class="letter-container">
+        <!-- 装飾用のアウトライン -->
+        <div class="letter-border">
+            
+            <!-- ヘッダー（グランピングの雰囲気を少し意識したナチュラルな植物アイコン風装飾） -->
+            <div class="header-deco">✦ 🌲 ✦</div>
+
+            <main class="letter-content">
+                <p class="greeting">いつも温かく見守ってくれて、本当にありがとう。</p>
+
+                <p>今年の春から無事に社会人としてスタートを切り、毎日を一生懸命過ごしています。こうして一歩を踏み出せたのは、22年間、どんな時も私の味方でいてくれて、いつでも応援してくれたお母さんとおばあちゃん、おじいちゃんのおかげです。本当に感謝しています。</p>
+
+                <p>今日は、そんなみんなにこれまでの感謝を伝えたくて、遅くなりましたが初任給でこのグランピングを計画しました。のんびり楽しんでもらえたら嬉しいです。</p>
+
+                <p>私は長男として、そしていとこの中でも最年長として、これからもみんなのお手本になれるような背中を見せていきたいと思っています。仕事はもちろん、大好きな筋トレやギターといった自分の軸も大切にしながら、どんな時も努力を忘れずに両立して頑張っていきます。</p>
+
+                <p>もしこれからしんどいことや壁にぶつかることがあっても、私にはいつでも帰れる温かい場所があることが、何よりの心のよりどころです。</p>
+
+                <p class="strong-text">これからは私が、みんなをたくさん笑顔にしていきます。</p>
+
+                <p class="closing">いろんなことがあった22年間、本当にありがとう。そして、これからもよろしくお願いします！</p>
+            </main>
+
+            <!-- フッター装飾 -->
+            <div class="footer-deco">✦ <a href="top.html">戻る</a> ✦</div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
